@@ -559,7 +559,19 @@ kubeflow_tools:
     ## notebook spawner configs
     ##  - these configs directly become the `spawner_ui_config.yaml` in the jupyter-web-app
     ##
-    spawnerFormDefaults: {}
+    spawnerFormDefaults:
+      gpus:
+        # Number of GPUs to be assigned to the Notebook Container
+        value:
+          # values: "none", "1", "2", "4", "8"
+          num: "none"
+          # Determines what the UI will show and send to the backend
+          vendors:
+          - limitsKey: "nvidia.com/gpu"
+            uiName: "NVIDIA"
+          # Values: "" or a `limits-key` from the vendors list
+          vendor: ""
+        readOnly: false
 
 
   ## --------------------------------------

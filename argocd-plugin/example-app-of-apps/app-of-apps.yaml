@@ -14,7 +14,7 @@ spec:
     ##    file, but you may use any repo (even one with no files)
     ##
     repoURL: "https://github.com/bbrfkr/deployKF.git"
-    targetRevision: "main" # <-- replace with a deployKF repo tag!
+    targetRevision: "test-0.0.1" # <-- replace with a deployKF repo tag!
     path: "."
 
     ## plugin configuration
@@ -27,7 +27,7 @@ spec:
         ##  - available versions: https://github.com/deployKF/deployKF/releases
         ##
         - name: "source_version"
-          string: "main" # <-- replace with a deployKF generator version!
+          string: "test-0.0.1" # <-- replace with a deployKF generator version!
 
         ## paths to values files within the `repoURL` repository
         ##  - the values in these files are merged, with later files taking precedence

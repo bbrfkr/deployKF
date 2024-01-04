@@ -236,7 +236,8 @@ deploykf_core:
     ## istio gateway configs
     ##
     gateway:
-      
+      tls:
+        enabled: false
       hostname: kubeflow.dynamis.bbrfkr.net
       ports:
         http: 80
@@ -707,8 +708,3 @@ kubeflow_tools:
   volumes:
     enabled: true
 
-
-deployKF:
-  gateway:
-    tls:
-      enabled: false

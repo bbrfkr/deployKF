@@ -83,7 +83,7 @@ deploykf_dependencies:
   ##             cert-manager
   ## --------------------------------------
   cert_manager:
-    enabled: true
+    enabled: false
     namespace: cert-manager
 
     ## extra manifests
@@ -236,6 +236,7 @@ deploykf_core:
     ## istio gateway configs
     ##
     gateway:
+      
       hostname: kubeflow.dynamis.bbrfkr.net
       ports:
         http: 80
@@ -705,3 +706,9 @@ kubeflow_tools:
   ## --------------------------------------
   volumes:
     enabled: true
+
+
+deployKF:
+  gateway:
+    tls:
+      enabled: false

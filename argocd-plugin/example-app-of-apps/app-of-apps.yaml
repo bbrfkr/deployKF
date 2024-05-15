@@ -93,7 +93,8 @@ spec:
               ##        deploykf-istio-gateway
               ## --------------------------------------
               deploykf_istio_gateway:
-                {} # <-- REMOVE THIS, IF YOU INCLUDE VALUES UNDER THIS SECTION!
+                gateewayService:
+                  type: "LoadBalancer"
 
               ## --------------------------------------
               ##      deploykf-profiles-generator

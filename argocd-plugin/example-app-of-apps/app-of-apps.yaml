@@ -93,7 +93,7 @@ spec:
               ##        deploykf-istio-gateway
               ## --------------------------------------
               deploykf_istio_gateway:
-                gateewayService:
+                gatewayService:
                   type: "LoadBalancer"
 
               ## --------------------------------------

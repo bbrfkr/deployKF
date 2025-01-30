@@ -238,7 +238,7 @@ deploykf_core:
     gateway:
       tls:
         enabled: false
-      hostname: kubeflow.dynamis.bbrfkr.net
+      hostname: kubeflow.prod.dynamis.bbrfkr.net
       ports:
         http: 80
         https: 443
